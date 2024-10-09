@@ -41,12 +41,28 @@ class MyApp extends StatelessWidget {
               ),
               Container(
                 color: Colors.white,
-                child: Row(
+                padding: const EdgeInsets.all(20),
+                margin: const EdgeInsets.symmetric(horizontal: 100),
+                child: const Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Icon(Icons.phone),
+                    Icon(Icons.fingerprint),
+                    Text('+31 6 22998734'),
                   ],
                 ),
-              )
+              ),
+              Container(
+                color: Colors.white,
+                padding: const EdgeInsets.all(20),
+                margin: const EdgeInsets.symmetric(horizontal: 100),
+                child: const Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Icon(Icons.mail),
+                    Text("student@mboutrecht.nl"),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
