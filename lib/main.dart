@@ -11,6 +11,10 @@ class MyApp extends StatelessWidget {
     print("hello! $name");
   }
 
+  int addFunction(int a, int b) {
+    return a + b;
+  }
+
   // app builder.
   @override
   Widget build(BuildContext context) {
@@ -78,6 +82,12 @@ class MyApp extends StatelessWidget {
                   helloWorld("johan");
                 },
                 child: const Text("Print name"),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  print(addFunction(10, 12));
+                },
+                child: const Text("10 + 12"),
               ),
             ],
           ),
