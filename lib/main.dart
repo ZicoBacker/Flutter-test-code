@@ -39,30 +39,35 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Container(
-                color: Colors.white,
-                padding: const EdgeInsets.all(20),
-                margin: const EdgeInsets.symmetric(horizontal: 100),
-                child: const Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    Icon(Icons.fingerprint),
-                    Text('+31 6 22998734'),
-                  ],
+              const Card(
+                margin: EdgeInsets.all(20),
+                child: ListTile(
+                  leading: Icon(Icons.fingerprint, color: Colors.teal),
+                  title: Text(
+                    "John doe",
+                    style: TextStyle(
+                        fontFamily: 'Source Sans 3',
+                        fontWeight: FontWeight.bold,
+                        color: Colors.teal),
+                  ),
                 ),
               ),
-              Container(
-                color: Colors.white,
-                padding: const EdgeInsets.all(20),
-                margin: const EdgeInsets.symmetric(horizontal: 100),
-                child: const Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    Icon(Icons.mail),
-                    Text("student@mboutrecht.nl"),
-                  ],
+              const Card(
+                margin: EdgeInsets.all(20),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.mail,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    "student@mboutrecht.nl",
+                    style: TextStyle(
+                        fontFamily: "Source Sans 3",
+                        fontWeight: FontWeight.bold,
+                        color: Colors.teal),
+                  ),
                 ),
-              ),
+              )
             ],
           ),
         ),
