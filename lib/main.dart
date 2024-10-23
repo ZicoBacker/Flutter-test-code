@@ -7,6 +7,11 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+  void helloWorld(String name) {
+    print("hello! $name");
+  }
+
+  // app builder.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -67,7 +72,13 @@ class MyApp extends StatelessWidget {
                         color: Colors.teal),
                   ),
                 ),
-              )
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  helloWorld("johan");
+                },
+                child: const Text("Print name"),
+              ),
             ],
           ),
         ),
